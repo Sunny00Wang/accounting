@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>1234</height>
+    <width>815</width>
+    <height>604</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,11 +17,37 @@
    <widget class="QTableWidget" name="tableWidget">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>10</y>
-      <width>731</width>
+      <x>130</x>
+      <y>20</y>
+      <width>671</width>
       <height>541</height>
      </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonAddRecord">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>99</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>添加记录</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonDeleteRecord">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>99</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>删除记录</string>
     </property>
    </widget>
   </widget>
@@ -30,8 +56,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
-     <height>20</height>
+     <width>815</width>
+     <height>24</height>
     </rect>
    </property>
    <property name="defaultUp">
@@ -43,7 +69,7 @@
     </property>
     <addaction name="separator"/>
     <addaction name="actionAddRecord"/>
-    <addaction name="actionshanchu"/>
+    <addaction name="actionDeleteRecord"/>
    </widget>
    <widget class="QMenu" name="menu_2">
     <property name="title">
@@ -99,7 +125,7 @@
     <string>添加记录</string>
    </property>
   </action>
-  <action name="actionshanchu">
+  <action name="actionDeleteRecord">
    <property name="text">
     <string>删除记录</string>
    </property>

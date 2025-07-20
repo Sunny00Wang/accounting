@@ -21,7 +21,8 @@ public:
 private:
     Ui::MainWindow *ui;
     void onAddRecord();
+    void onDeleteRecord();
     void addRecordToTable(const Record &r);
-    bool validateInputData();
-};
+    //bool validateInputData();
+    };
 #endif // MAINWINDOW_H
