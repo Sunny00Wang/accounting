@@ -1,3 +1,20 @@
+
+# ----------------------------------------------------------------------------
+# General rules
+*~
+*.autosave
+*.core
+*.orig
+*.rej
+.#*
+*.*#
+core
+!core/
+tags
+.DS_Store
+.directory
+Thumbs.db
+
 # Prerequisites
 *.d
 
@@ -10,15 +27,19 @@
 # Precompiled Headers
 *.gch
 *.pch
+*_pch.h.cpp
 
 # Linker files
 *.ilk
 
 # Debugger Files
 *.pdb
+*.dwo
+*.debug
 
 # Compiled Dynamic libraries
 *.so
+*.so.*
 *.dylib
 *.dll
 
@@ -37,5 +58,49 @@
 *.out
 *.app
 
-# debug information files
-*.dwo
+# Qt and qmake
+*.qm
+Makefile*
+*.prl
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
+/.qmake.cache
+/.qmake.stash
+
+# qtcreator generated files
+*.pro.user*
+*.qbs.user*
+CMakeLists.txt.user*
+
+# Visual Studio generated files
+*.ib_pdb_index
+*.idb
+*.sln
+*.suo
+*.vcproj
+*vcproj.*.*.user
+*.ncb
+*.sdf
+*.opensdf
+*.vcxproj
+*vcxproj.*
+
+# MinGW generated files
+*.Debug
+*.Release
+
+# XEmacs / Vim temporary files
+*.flc
+.*.swp
+
+# Python
+*.pyc
+
+# Build output directories
+.moc/
+.obj/
+.pch/
+.rcc/
+.uic/
+/build*/

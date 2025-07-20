@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>1234</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>731</width>
+      <height>541</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="defaultUp">
+    <bool>false</bool>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>记录(&amp;R)</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionAddRecord"/>
+    <addaction name="actionshanchu"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>查看(&amp;V)</string>
+    </property>
+    <addaction name="actionShowChart"/>
+    <addaction name="actionfenlei"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>设置(&amp;S)</string>
+    </property>
+    <addaction name="actionchu"/>
+    <addaction name="actionmo"/>
+   </widget>
+   <widget class="QMenu" name="menu_6">
+    <property name="title">
+     <string>文件(&amp;F)</string>
+    </property>
+    <addaction name="actionExportCSV"/>
+    <addaction name="actiondaoru"/>
+    <addaction name="actiontuichu"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>帮助(&amp;H)</string>
+    </property>
+   </widget>
+   <addaction name="menu_6"/>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_5"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionExportCSV">
+   <property name="text">
+    <string>导出</string>
+   </property>
+  </action>
+  <action name="actiondaoru">
+   <property name="text">
+    <string>导入</string>
+   </property>
+  </action>
+  <action name="actiontuichu">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actionAddRecord">
+   <property name="text">
+    <string>添加记录</string>
+   </property>
+  </action>
+  <action name="actionshanchu">
+   <property name="text">
+    <string>删除记录</string>
+   </property>
+  </action>
+  <action name="actionShowChart">
+   <property name="text">
+    <string>显示图表 </string>
+   </property>
+  </action>
+  <action name="actionfenlei">
+   <property name="text">
+    <string>分类管理</string>
+   </property>
+  </action>
+  <action name="actionchu">
+   <property name="text">
+    <string>存储方式</string>
+   </property>
+  </action>
+  <action name="actionmo">
+   <property name="text">
+    <string>默认分类设置</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
